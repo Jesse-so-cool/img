@@ -1,9 +1,236 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T05:46:51.894Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="22.0.4" etag="APSMtP5vT-3c2pk66mNr" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-10T06:53:40.091Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="im8LDwMppYlEdxkQJgfo" version="22.0.4" type="github">
   <diagram name="第 1 页" id="BkuWCGAVD5q9DIeoQ7Bs">
-    <mxGraphModel>
+    <mxGraphModel dx="2389" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-11" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;偏向延迟之前创建&lt;/span&gt;&#xa;&#xa;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" target="qMn13mMgNQVjkLriDJ_W-10">
+          <mxGeometry x="0.159" relative="1" as="geometry">
+            <mxPoint x="-70" y="170" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-12" value="&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-11">
+          <mxGeometry x="-0.0618" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-3" target="qMn13mMgNQVjkLriDJ_W-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-17" value="成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-15">
+          <mxGeometry x="0.6588" relative="1" as="geometry">
+            <mxPoint x="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-23" value="CAS更换线程id" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-15">
+          <mxGeometry x="-0.4889" y="-1" relative="1" as="geometry">
+            <mxPoint x="16" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-3" value="匿名偏向状态&lt;br&gt;101" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=17;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;fontSize=18;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-45" target="qMn13mMgNQVjkLriDJ_W-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="200" as="sourcePoint" />
+            <mxPoint x="250" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-6" value="偏向延迟之后创建" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;fontSize=14;" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-5">
+          <mxGeometry x="-0.0022" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-8" target="qMn13mMgNQVjkLriDJ_W-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="310" />
+              <mxPoint x="780" y="130" />
+              <mxPoint x="320" y="130" />
+              <mxPoint x="320" y="155" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-56" value="释放锁" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-52">
+          <mxGeometry x="-0.9514" y="-3" relative="1" as="geometry">
+            <mxPoint x="9" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-57" value="CAS Markword复制回对象头" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-52">
+          <mxGeometry x="-0.5465" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-8" value="轻量级锁&lt;br&gt;000" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=17;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-9" value="重量级锁" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=17;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="890" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-10" target="qMn13mMgNQVjkLriDJ_W-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-51" value="获取锁" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-50">
+          <mxGeometry x="-0.329" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-10" value="无锁&lt;br&gt;001" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=17;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="230" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-14" value="偏向锁&lt;br&gt;101" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=17;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="180" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="qMn13mMgNQVjkLriDJ_W-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="410" as="sourcePoint" />
+            <mxPoint x="70" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-29" value="失败" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-25">
+          <mxGeometry x="-0.0733" relative="1" as="geometry">
+            <mxPoint y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-28" target="qMn13mMgNQVjkLriDJ_W-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-39" value="线程还在同步块中，升级" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-38">
+          <mxGeometry x="-0.1037" y="1" relative="1" as="geometry">
+            <mxPoint x="140" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-28" target="qMn13mMgNQVjkLriDJ_W-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-42" value="等待持有锁的线程到达安全点" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-40">
+          <mxGeometry x="-0.4571" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-44" value="已经退出同步块，修改状态Markword001，第一个0表示不再偏向" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-40">
+          <mxGeometry x="0.7211" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-28" value="偏向锁撤销" style="shape=isoRectangle;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="20" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-45" value="new Oject" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-48" target="qMn13mMgNQVjkLriDJ_W-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-48" value="001，第一个0表示不可偏向" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-58" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="qMn13mMgNQVjkLriDJ_W-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="310" as="sourcePoint" />
+            <mxPoint x="430" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-60" value="CAS失败" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-58">
+          <mxGeometry x="-0.0364" y="-4" relative="1" as="geometry">
+            <mxPoint y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-65" value="新线程获取锁" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="414" y="580" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-74" target="qMn13mMgNQVjkLriDJ_W-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-85" value="成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-79">
+          <mxGeometry x="0.3916" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-74" value="&lt;br&gt;CAS MardWord替换指针" style="shape=isoRectangle;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="710" y="415" width="116.67" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-80" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.509;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="qMn13mMgNQVjkLriDJ_W-74">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="450" as="sourcePoint" />
+            <mxPoint x="720" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-81" value="自旋" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-80">
+          <mxGeometry x="0.0666" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-86" value="失败" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-80">
+          <mxGeometry x="-0.6871" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-82" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.639;exitY=0.111;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-74" target="qMn13mMgNQVjkLriDJ_W-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="860" y="630" as="sourcePoint" />
+            <mxPoint x="910" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-83" value="自旋15次" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-82">
+          <mxGeometry x="-0.2751" y="-3" relative="1" as="geometry">
+            <mxPoint x="21" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.502;entryY=0.98;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-65" target="qMn13mMgNQVjkLriDJ_W-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.004;entryY=0.507;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-91" target="qMn13mMgNQVjkLriDJ_W-101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-90" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-93" value="01" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-92">
+          <mxGeometry x="-0.0246" y="-3" relative="1" as="geometry">
+            <mxPoint x="77" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-96" value="可偏向状态为1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-92">
+          <mxGeometry x="0.6643" relative="1" as="geometry">
+            <mxPoint y="-35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-91" value="查看锁标志位" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
+          <mxGeometry x="414" y="485" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.498;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-65" target="qMn13mMgNQVjkLriDJ_W-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-46.664999999999964" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-105" value="0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-103">
+          <mxGeometry x="-0.0092" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-101" value="MarkWord线程ID是否为0" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
+          <mxGeometry x="-113.33" y="475" width="133.33" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.487;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qMn13mMgNQVjkLriDJ_W-101" target="qMn13mMgNQVjkLriDJ_W-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-230" y="515" />
+              <mxPoint x="-230" y="309" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qMn13mMgNQVjkLriDJ_W-107" value="线程ID不为0且不是当前线程" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qMn13mMgNQVjkLriDJ_W-106">
+          <mxGeometry x="-0.263" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-71" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
